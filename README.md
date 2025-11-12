@@ -22,7 +22,7 @@ Puedes ejecutar cada simulador de dos formas: desde **CLion** o desde **Git Bash
 ### 🧩 Opción 1: Usar CLion (Recomendada)
 
 1. Abre el proyecto en CLion.  
-2. Selecciona la carpeta del algoritmo (por ejemplo `fcfs/`) y abre `main.c`.  
+2. Selecciona la carpeta del algoritmo (por ejemplo `fcfs/`) y abre `fcfs.c`.  
 3. Pulsa **Run ▶️** para compilar y ejecutar.  
 4. Asegúrate de que `procesos.txt` está en la raíz del proyecto (`../procesos.txt` en el código).
 
@@ -35,36 +35,36 @@ Si tienes **Git Bash** instalado, puedes compilar y ejecutar desde terminal con 
 #### 🔹 FCFS
 ```bash
 cd fcfs
-gcc main.c -o fcfs_sim
-./fcfs_sim ../procesos.txt
+gcc fcfs.c -o fcfs_sim
+./fcfs_sim.exe ../procesos.txt
 ````
 
 #### 🔹 SJF
 
 ```bash
 cd ../sjf
-gcc main.c -o sjf_sim
-./sjf_sim ../procesos.txt
+gcc sjf.c -o sjf_sim
+./sjf_sim.exe ../procesos.txt
 ```
 
 #### 🔹 SRTF
 
 ```bash
 cd ../srtf
-gcc main.c -o srtf_sim
-./srtf_sim ../procesos.txt
+gcc srtf.c -o srtf_sim
+./srtf_sim.exe ../procesos.txt
 ```
 
 #### 🔹 Round Robin
 
 ```bash
 cd ../rr
-gcc main.c -o rr_sim
-./rr_sim ../procesos.txt
+gcc rr.c -o rr_sim
+./rr_sim.exe ../procesos.txt
 ```
 
 > ⚙️ En Windows CMD o PowerShell, reemplaza `./nombre` por `nombre.exe`.
-> Ejemplo: `rr_sim.exe ../procesos.txt`
+> Ejemplo: `./rr_sim.exe ../procesos.txt`
 
 ---
 
